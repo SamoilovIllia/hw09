@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+my_hw09.py
 
 # C extensions
 *.so
