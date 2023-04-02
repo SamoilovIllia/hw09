@@ -10,7 +10,7 @@ def input_errors(func):
     def wrapper(*args, **kwargs):
         try:
             return func(*args, **kwargs)
-        except Exception as e:
+        except IndexError as e:
             print(f"Error: {e}")
             return 'The phone number must be ten digits long.\nThe name and phone number must be separated by only a space.\nFor example:\nadd Petro 0987456321\nchange Petro 0987123004'
     return wrapper
